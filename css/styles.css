@@ -11,6 +11,14 @@
 	min-height: 400px;
 }
 
+.row h2 {
+	font-size: 1.7em;
+}
+
+.row-content h3 {
+	font-size: 1.5em;
+}
+
 footer {
 	background-color: #D1C4E9;
 	margin: 0 auto;
