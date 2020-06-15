@@ -58,3 +58,7 @@ legend {
 	border-left: 1px solid #ddd;
 	padding: 10px;
 }
+
+a {
+	cursor: pointer;
+}

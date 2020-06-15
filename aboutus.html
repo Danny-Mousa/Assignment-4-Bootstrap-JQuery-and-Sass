@@ -29,11 +29,10 @@
 					<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list"></span> Menu</a></li>
 					<li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact</a></li>
 				</ul>
-				
 			</div>
 		</div>
-		
 	</nav>
+
 
     <header class="jumbotron">
         <div class="container">
@@ -42,8 +41,21 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center d-flex justify-content-center">
-                    <img src="img/logo.png" class="img-fluid" alt="restaurant logo">
+                <div class="col-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center">
+                            <img src="img/logo.png" class="img-fluid" alt="restaurant logo">
+                        </div>
+                        <div class="col-12 mt-4 col-sm-6 mt-sm d-flex ">
+                            <a type="button" role="button" href="#toForm" 
+                              class="btn btn-warning btn-sm btn-block align-self-center nav-link"
+                              data-toggle="tooltip"
+                              data-html="true"
+                              data-placement="bottom"
+                              title="Or Call us at<br>+852 12345678" >Reserve Table
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,7 +275,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
 </body>
 
 </html>
