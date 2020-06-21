@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact</a></li>
                 </ul>
-                <a class="text-white ml-auto" data-toggle="modal" data-target="#loginModal">
+                <a id="loginButton" class="text-white ml-auto" data-target="#loginModal">
                     <span class="fa fa-sign-in"></span>
                     Login
                 </a>
@@ -40,7 +40,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h6 class="modal-title"><strong>Welcome Back</strong></h6>
+                    <h4 class="modal-title">Login</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -158,7 +158,7 @@
                             <img src="img/logo.png" class="img-fluid" alt="restaurant logo">
                         </div>
                         <div class="col-12 mt-4 col-sm-6 mt-sm d-flex ">
-                            <a type="button" role="button" href="#toForm" data-toggle="modal" data-target="#reservationModal" class="btn btn-warning btn-sm btn-block align-self-center nav-link">
+                            <a id="reserveButton" type="button" role="button" href="#toForm" data-target="#reservationModal" class="btn btn-warning btn-sm btn-block align-self-center nav-link">
                               Reserve Table
                             </a>
                         </div>
@@ -173,7 +173,7 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-12">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="myCarousel" class="carousel slide">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img class="img-fluid img-thumbnail align-self-center mr-3" src="img/uthappizza.png" alt="Uthappizza">
@@ -314,7 +314,22 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(function() {
-            $("#myCarousel").carousel( { interval: 2000 } );
+            // Login Modal setting up code
+
+            $("#loginButton").click( function() {
+                $("#loginModal").modal("toggle");
+            });
+
+            // Reserve Table Modal setting up code
+
+            $("#reserveButton").click( function() {
+                $("#reservationModal").modal("toggle");
+            });
+            
+
+
+            // Carousrl setting up code
+            $("#myCarousel").carousel( {interval: 2000 } );
 
             $("#carouselButton").click( function() {
 

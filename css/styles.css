@@ -1,86 +1,73 @@
+.modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  .modal-header button {
+    color: floralwhite; }
 
-.navbar-dark {
-	background-color: #512DA8;
-}
+.modal-body {
+  background-color: #D1C4E9; }
 
 .row-header {
-	margin: 0 auto;
-	padding: 0 auto;
-}
+  margin: 0 auto;
+  padding: 0px 0px; }
 
 .row-content {
-	margin: 0 auto;
-	padding: 50px 0;
-	border-bottom: 1px ridge;
-	min-height: 400px;
-}
-
-.row h2 {
-	font-size: 1.7em;
-}
-
-.row-content h3 {
-	font-size: 1.5em;
-}
+  margin: 0 auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
 
 .footer {
-	background-color: #D1C4E9;
-	margin: 0 auto;
-	padding: 20px 0;
-}
+  background-color: #D1C4E9;
+  margin: 0 auto;
+  padding: 20px 0px; }
 
 .jumbotron {
-	padding: 70px 30px;
-	margin: 0 auto;
-	background-color: #9575CD;
-	color: floralwhite;
-	border-radius: 0;
-}
+  margin: 0 auto;
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite; }
 
 address {
-	font-size: 80%;
-	margin: 0;
-	color: #0f0f0f;
-}
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
 
-legend {
-	font-size: 1.3rem;
-    font-weight: 600;
-}
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
 
-.form-check label {
-	font-weight: 500;
-}
+.navbar-dark {
+  background-color: #512DA8; }
 
 .tab-content {
-	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-	border-left: 1px solid #ddd;
-	padding: 10px;
-}
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+legend {
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+.form-check label {
+  font-weight: 500; }
 
 a {
-	cursor: pointer;
-}
+  cursor: pointer; }
 
 .carousel {
-    background:#512DA8;
-}
-
-.carousel-item {
-  height: 300px;
-}
-
-.carousel-item img {
+  background: #512DA8; }
+  .carousel .carousel-item {
+    height: 300px; }
+  .carousel img {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 300px;
-}
+    min-height: 300px; }
 
 #carouselButton {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 1;
-}
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
